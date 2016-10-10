@@ -303,7 +303,7 @@ $(BUGSTITLE Compiler Changes,
         void foo ()
         {
           string[] arr = [ "Hello", "buggy" "World" ];
-          assert(arr.length = 3); // Fail, the length of the array is 2 and the content is [ "Hello", "buggyWorld" ]
+          assert(arr.length == 3); // Fail, the length of the array is 2 and the content is [ "Hello", "buggyWorld" ]
         }
         ---
     )
